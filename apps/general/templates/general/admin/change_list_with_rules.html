@@ -1,0 +1,6 @@
+{% extends 'admin/import_change_list.html' %}
+
+{% block content %}
+    {% include 'general/admin/rules.html' with rules=rules rules_title=rules_title %}
+    {{ block.super }}
+{% endblock %}
