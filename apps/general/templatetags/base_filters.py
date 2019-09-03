@@ -56,17 +56,8 @@ def menu_logo_class(request):
     custom = 'custom-logo'
     if not request.user.is_authenticated:
         return default
-    if request.user.property_manager and request.user.property_manager.company.logo:
-        return custom
-    resident = Resident.all_objects.filter(user=request.user).order_by('deleted', '-created_at').first()
-    if resident and resident.property.logo:
-        return custom
     return default
 
-
-@register.filter
-def is_resident_portal(request):
-    return request.path.startswith("/resident/")
 
 
 @register.filter

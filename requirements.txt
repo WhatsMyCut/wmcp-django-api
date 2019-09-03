@@ -24,7 +24,7 @@ django_celery_beat==1.1.0
 django_celery_results==1.0.1
 django_filter==1.1.0
 factory_boy==2.8.1
-furl==1.2.1                         
+furl==1.2.1
 google-api-python-client==1.6.4
 graphene-django==1.3
 graphene==1.4.1
@@ -43,12 +43,12 @@ python-logstash==0.4.6
 python3-keyczar==0.71rc0
 pytidylib==0.3.2
 pytz==2017.2
-raven==6.9.0                        
+raven==6.9.0
 requests==2.13.0
 retry==0.9.2
 simple-salesforce==0.73.0
 stripe==1.59.0
-tblib==1.3.2                        
+tblib==1.3.2
 twilio==6.28.0
 unittest-xml-reporting==2.1.0
 zeep==2.5.0

@@ -1,0 +1,22 @@
+from django.core import mail
+
+# noinspection PyUnresolvedReferences
+from .test import *
+# noinspection PyUnresolvedReferences
+from .no_migrations import *
+
+# Local settings
+RDS_USERNAME = 'postgres'
+RDS_HOSTNAME = 'localhost'
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': RDS_DB_NAME,
+        'USER': RDS_USERNAME,
+        'PASSWORD': RDS_PASSWORD,
+        'HOST': RDS_HOSTNAME,
+        'PORT': RDS_PORT,
+    }
+}
+
+mail.outbox = []

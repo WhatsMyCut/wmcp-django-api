@@ -17,7 +17,7 @@ from apps.general.loggers import django_logger
 from apps.general.utils import in_tests
 
 
-class AmenifyDatabaseBackend(DatabaseBackend):
+class WMCPDatabaseBackend(DatabaseBackend):
     def mark_as_failure(self, task_id, exc, *args, **kwargs):
         """Mark task as executed with failure."""
         django_logger.exception('Celery task failed: %s' % exc, exc_info=exc)
