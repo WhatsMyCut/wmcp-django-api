@@ -35,7 +35,7 @@ html2text==2016.9.19
 kombu==4.1.0
 mandrill==1.0.57
 model-mommy==1.6.0
-Pillow==6.2.0
+Pillow==8.1.1
 psycopg2-binary==2.7.4
 pysftp==0.2.9
 python-dateutil==2.6.0
