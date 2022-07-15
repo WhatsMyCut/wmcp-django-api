@@ -21,7 +21,7 @@ django-timezone-field==3.0
 django-tinymce==2.8.0
 django==2.1.11
 django_celery_beat==1.1.0
-django_celery_results==1.0.1
+django_celery_results==2.4.0
 django_filter==1.1.0
 factory_boy==2.8.1
 furl==1.2.1
